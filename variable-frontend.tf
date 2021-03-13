@@ -18,7 +18,7 @@ variable "front_sg_ingress_ssh_description" {
 
 variable "front_sg_ingress_ssh_port" {
   type        = number
-  default     = 22
+  default     = # PORT
   description = "This is the port for the inbound rule that allowed SSH to the frontend instance"
 }
 
@@ -46,7 +46,7 @@ variable "front_sg_ingress_app_description" {
 
 variable "front_sg_ingress_app_port" {
   type        = number
-  default     = 8080
+  default     = # PORT
   description = "This is the port for the inbound rule that allowed traffic through the port 8080 from the internet to the frontend"
 }
 
@@ -79,7 +79,7 @@ variable "lb_sg_in_traffic_description" {
 
 variable "lb_sg_in_traffic_port" {
   type        = number
-  default     = 8080
+  default     = # PORT
   description = "This is the port for the inbound rule that allowed traffic to the load balancer"
 }
 
@@ -125,7 +125,7 @@ variable "front_tg_protocol" {
 
 variable "front_tg_port" {
   type    = number
-  default = 8080
+  default = # PORT
 }
 
 #############################
@@ -149,5 +149,5 @@ variable "front_lbl_protocol" {
 
 variable "front_lbl_port" {
   type    = string
-  default = 8080
+  default = # PORT
 }
