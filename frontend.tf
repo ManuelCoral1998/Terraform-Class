@@ -71,7 +71,7 @@ resource "aws_launch_template" "launch-template-front" {
   key_name               = var.key_name
   vpc_security_group_ids = [ aws_security_group.sg-front-instance.id ]
 
-  user_data = base64encode(templatefile("./front.sh", {back_host = "localhost"}))
+  user_data = base64encode(templatefile("./front.sh", {back_host = "localhost", tag="latest"}))
 
   tags = {
     "responsible" = var.tag_responsible

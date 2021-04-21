@@ -17,4 +17,4 @@ git clone https://github.com/ManuelCoral1998/Ansible-Class.git
 
 cd Ansible-Class/
 
-ansible-playbook -i ./inventory/hosts -l ui site.yml -vvv -e back_host=${back_host}
+ansible-playbook -i ./inventory/hosts -l ui site.yml -vvv -e back_host=${back_host} -e tag=${tag}
