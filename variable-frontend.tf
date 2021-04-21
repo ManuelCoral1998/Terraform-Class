@@ -109,6 +109,10 @@ variable "front_launch_template_instance_type" {
   default = "t2.micro"
 }
 
+variable "front_launch_template_instance_name" {
+  default = "tf-instance-front-icesi-health"
+}
+
 ############################
 ## Target Group Variables ##
 ############################

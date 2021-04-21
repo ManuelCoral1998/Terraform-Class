@@ -89,7 +89,8 @@ resource "aws_launch_template" "launch-template-front" {
     resource_type = "instance"
     
     tags = {
-        "responsible" = var.tag_responsible
+        "responsible" = var.tag_responsible,
+        "Name"        = var.lt_instance_name
     }
   }
 }
