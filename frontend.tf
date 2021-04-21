@@ -90,7 +90,7 @@ resource "aws_launch_template" "launch-template-front" {
     
     tags = {
         "responsible" = var.tag_responsible,
-        "Name"        = var.lt_instance_name
+        "Name"        = var.front_launch_template_instance_name
     }
   }
 }
